@@ -1,0 +1,96 @@
+.Coin-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 52px;
+}
+
+.Coin-container {
+  width: 290px;
+  height: 138px;
+  position: absolute;
+  color: #ffffff;
+  cursor: pointer;
+}
+.Coin-container .Top {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+}
+
+.Coin-container .Top .Left {
+  height: 33px;
+  width: 112px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.Coin-container .Top img {
+  margin-right: 12px;
+}
+
+.Coin-wrapper .Coin-container .Bottom {
+  height: 105px;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.Coin-wrapper .Coin-container .image {
+  width: 112px;
+  height: 105px;
+  display: flex;
+}
+
+.Coin-wrapper .Coin-container .Bottom img {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+
+.Coin-wrapper .Coin-container .Bottom .Desc p {
+  text-align: right;
+  margin: 6px 0;
+}
+
+.Coin-wrapper .Coin-container .Bottom .Desc {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.Coin-wrapper .Coin-container .Bottom .Desc .Curreny {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.Coin-wrapper .Coin-container .Bottom .Desc .Date {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 599px) {
+  .Coin-wrapper {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .Coin-wrapper {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .Coin-wrapper {
+    flex: 0 0 33.3%;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .Coin-wrapper {
+    flex: 0 0 25%;
+  }
+}

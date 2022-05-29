@@ -1,0 +1,17 @@
+.Oracle-logo {
+  height: 28px;
+}
+
+.Oracle-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  height: 100%;
+  
+}
+
+.Oracle-logo-wrapper {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 28px;
+}

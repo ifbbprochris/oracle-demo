@@ -1,38 +1,62 @@
+:root {
+  --loading-grey: #ededed;
+}
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  height: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Flex-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.Flex-center {
+  flex-grow: 1;
+}
+.Flex-left {
+  order: -1;
+  flex: 0 0 100px;
+}
+.Flex-right {
+  flex: 0 0 100px;
+}
+footer {
+  height: 100px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 300px) {
+  .Flex-left {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .Flex-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .Flex-left {
+    flex: 0 0 100px;
+  }
+  .Flex-right {
+    flex: 0 0 100px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .Flex-left {
+    display: none;
+  }
+  .Flex-right {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .Flex-left {
+    flex: 0 0 50px;
+  }
+  .Flex-right {
+    flex: 0 0 50px;
   }
 }

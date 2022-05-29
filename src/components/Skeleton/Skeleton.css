@@ -1,0 +1,90 @@
+.Skeleton {
+  width: 290px;
+  height: 138px;
+  position: absolute;
+  color: #ffffff;
+}
+
+.Skeleton .Top {
+  height: 33px;
+  width: 112px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Skeleton .Top p {
+  margin: 0;
+  width: 50px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.Skeleton .Bottom {
+  height: 105px;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Skeleton .Image {
+  width: 112px;
+  height: 105px;
+  display: flex;
+}
+
+.Skeleton .Bottom .Image img {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.Skeleton .Bottom .Desc p {
+  text-align: right;
+  margin: 6px 0;
+  min-height: 20px;
+  min-width: 150px;
+  border-radius: 5px;
+}
+
+.Skeleton .Bottom .Desc {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.Skeleton .Bottom .Desc .Curreny {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.Skeleton .Bottom .Desc .Date {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.Skeleton .Bottom .Image img,
+.Skeleton .Bottom .Desc p,
+.Skeleton .Top p {
+  background-color: var(--loading-grey);
+  background: linear-gradient(
+    100deg,
+    rgba(255,255,255, 1) 40%,
+    rgba(255,255,255, .1) 50%,
+    rgba(255,255,255, 1) 60%
+  ) #221334;
+  background-size: 200% 100%;
+  background-position-x: 120%;
+  animation: 1s Loading ease-in-out infinite;
+}
+
+@keyframes Loading {
+  to {
+    background-position-x: -20%;
+  }
+}
