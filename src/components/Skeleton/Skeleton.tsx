@@ -12,7 +12,7 @@ const Skeleton: React.FC = () => {
         </div>
         <div className='Bottom'>
           <div className='Image'>
-            <img alt="skeleton"/>
+            <img/>
           </div>
           <div className='Desc'>
             <p className='Curreny'></p>
